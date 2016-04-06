@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		368DF0211CB4AB5F0095E16B /* PaymentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0201CB4AB5F0095E16B /* PaymentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		368DF0501CB4ABA50095E16B /* PTKAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0261CB4ABA50095E16B /* PTKAddressZip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0501CB4ABA50095E16B /* PTKAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0261CB4ABA50095E16B /* PTKAddressZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0511CB4ABA50095E16B /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0271CB4ABA50095E16B /* PTKAddressZip.m */; };
-		368DF0521CB4ABA50095E16B /* PTKCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0281CB4ABA50095E16B /* PTKCard.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0521CB4ABA50095E16B /* PTKCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0281CB4ABA50095E16B /* PTKCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0531CB4ABA50095E16B /* PTKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0291CB4ABA50095E16B /* PTKCard.m */; };
-		368DF0541CB4ABA50095E16B /* PTKCardCVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02A1CB4ABA50095E16B /* PTKCardCVC.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0541CB4ABA50095E16B /* PTKCardCVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02A1CB4ABA50095E16B /* PTKCardCVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0551CB4ABA50095E16B /* PTKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF02B1CB4ABA50095E16B /* PTKCardCVC.m */; };
-		368DF0561CB4ABA50095E16B /* PTKCardExpiry.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02C1CB4ABA50095E16B /* PTKCardExpiry.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0561CB4ABA50095E16B /* PTKCardExpiry.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02C1CB4ABA50095E16B /* PTKCardExpiry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0571CB4ABA50095E16B /* PTKCardExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF02D1CB4ABA50095E16B /* PTKCardExpiry.m */; };
-		368DF0581CB4ABA50095E16B /* PTKCardNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02E1CB4ABA50095E16B /* PTKCardNumber.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0581CB4ABA50095E16B /* PTKCardNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02E1CB4ABA50095E16B /* PTKCardNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0591CB4ABA50095E16B /* PTKCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF02F1CB4ABA50095E16B /* PTKCardNumber.m */; };
-		368DF05A1CB4ABA50095E16B /* PTKCardType.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0301CB4ABA50095E16B /* PTKCardType.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		368DF05B1CB4ABA50095E16B /* PTKComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0311CB4ABA50095E16B /* PTKComponent.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF05A1CB4ABA50095E16B /* PTKCardType.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0301CB4ABA50095E16B /* PTKCardType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368DF05B1CB4ABA50095E16B /* PTKComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0311CB4ABA50095E16B /* PTKComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF05C1CB4ABA50095E16B /* PTKComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0321CB4ABA50095E16B /* PTKComponent.m */; };
-		368DF05D1CB4ABA50095E16B /* PTKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0331CB4ABA50095E16B /* PTKTextField.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF05D1CB4ABA50095E16B /* PTKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0331CB4ABA50095E16B /* PTKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF05E1CB4ABA50095E16B /* PTKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0341CB4ABA50095E16B /* PTKTextField.m */; };
-		368DF05F1CB4ABA50095E16B /* PTKUSAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0351CB4ABA50095E16B /* PTKUSAddressZip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF05F1CB4ABA50095E16B /* PTKUSAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0351CB4ABA50095E16B /* PTKUSAddressZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0601CB4ABA50095E16B /* PTKUSAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0361CB4ABA50095E16B /* PTKUSAddressZip.m */; };
-		368DF0611CB4ABA50095E16B /* PTKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0371CB4ABA50095E16B /* PTKView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0611CB4ABA50095E16B /* PTKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0371CB4ABA50095E16B /* PTKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368DF0621CB4ABA50095E16B /* PTKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0381CB4ABA50095E16B /* PTKView.m */; };
 		368DF0631CB4ABA50095E16B /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03B1CB4ABA50095E16B /* amex.png */; };
 		368DF0641CB4ABA50095E16B /* amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03C1CB4ABA50095E16B /* amex@2x.png */; };
@@ -803,6 +803,7 @@
 				368DF0251CB4AB5F0095E16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA45AC6616AE350D0003A41D /* Build configuration list for PBXProject "PaymentKit Example" */ = {
 			isa = XCConfigurationList;
