@@ -10,7 +10,6 @@
 		347D10220CD2551B2976ADBA /* PTKComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D1B3599CFA227F6AB7FCA /* PTKComponent.m */; };
 		347D16FCD9EB38A658D4B045 /* PTKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D1979110780A062468336 /* PTKTextField.m */; };
 		347D1C9D79EE33CD287B94EE /* PTKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D118D23A60619342D3892 /* PTKView.m */; };
-		36BA2AD91CB49F6500AAD564 /* SLPaymentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BA2AD81CB49F6500AAD564 /* SLPaymentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36BA2ADF1CB49F7C00AAD564 /* PTKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D118D23A60619342D3892 /* PTKView.m */; };
 		36BA2AE11CB49F7C00AAD564 /* PTKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D1979110780A062468336 /* PTKTextField.m */; };
 		36BA2AE31CB49F7C00AAD564 /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADE6CE16BC44D9006FF4D1 /* PTKAddressZip.m */; };
@@ -45,6 +44,8 @@
 		36BA2B091CB4A35600AAD564 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7016AE350D0003A41D /* UIKit.framework */; };
 		36BA2B0A1CB4A36B00AAD564 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6F1A5916C19BF700835C75 /* QuartzCore.framework */; };
 		36BA2B0B1CB4A37200AAD564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7416AE350D0003A41D /* CoreGraphics.framework */; };
+		36BA2B0F1CB4A9EA00AAD564 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36BA2B0D1CB4A9EA00AAD564 /* Info.plist */; };
+		36BA2B101CB4A9EA00AAD564 /* SLPaymentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BA2B0E1CB4A9EA00AAD564 /* SLPaymentKit.h */; };
 		4A83384818B53C330035888A /* PTKComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D1B3599CFA227F6AB7FCA /* PTKComponent.m */; };
 		4C332B4316FA5297009C782D /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C332B4116FA5297009C782D /* textfield.png */; };
 		4C332B4416FA5297009C782D /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C332B4216FA5297009C782D /* textfield@2x.png */; };
@@ -106,8 +107,8 @@
 		347D1979110780A062468336 /* PTKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKTextField.m; sourceTree = "<group>"; };
 		347D1B3599CFA227F6AB7FCA /* PTKComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKComponent.m; sourceTree = "<group>"; };
 		36BA2AD61CB49F6500AAD564 /* SLPaymentKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLPaymentKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36BA2AD81CB49F6500AAD564 /* SLPaymentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPaymentKit.h; sourceTree = "<group>"; };
-		36BA2ADA1CB49F6500AAD564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BA2B0D1CB4A9EA00AAD564 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BA2B0E1CB4A9EA00AAD564 /* SLPaymentKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPaymentKit.h; sourceTree = "<group>"; };
 		4A8CD3EB18DD327700796758 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4C332B4116FA5297009C782D /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
 		4C332B4216FA5297009C782D /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
@@ -221,13 +222,14 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		36BA2AD71CB49F6500AAD564 /* SLPaymentKit */ = {
+		36BA2B0C1CB4A9EA00AAD564 /* SLPaymentKit */ = {
 			isa = PBXGroup;
 			children = (
-				36BA2AD81CB49F6500AAD564 /* SLPaymentKit.h */,
-				36BA2ADA1CB49F6500AAD564 /* Info.plist */,
+				36BA2B0D1CB4A9EA00AAD564 /* Info.plist */,
+				36BA2B0E1CB4A9EA00AAD564 /* SLPaymentKit.h */,
 			);
-			path = SLPaymentKit;
+			name = SLPaymentKit;
+			path = ../SLPaymentKit;
 			sourceTree = "<group>";
 		};
 		4C332B4516FA529C009C782D /* TextField */ = {
@@ -243,10 +245,10 @@
 		FA45AC6116AE350D0003A41D = {
 			isa = PBXGroup;
 			children = (
+				36BA2B0C1CB4A9EA00AAD564 /* SLPaymentKit */,
 				FA45AC9616AE35210003A41D /* PaymentKit */,
 				FA45AC7616AE350D0003A41D /* PaymentKit Example */,
 				FA6A2F8F16C2D6F400915AEB /* PaymentKit Test */,
-				36BA2AD71CB49F6500AAD564 /* SLPaymentKit */,
 				FA45AC6F16AE350D0003A41D /* Frameworks */,
 				FA45AC6D16AE350D0003A41D /* Products */,
 			);
@@ -394,7 +396,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BA2AD91CB49F6500AAD564 /* SLPaymentKit.h in Headers */,
+				36BA2B101CB4A9EA00AAD564 /* SLPaymentKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +503,7 @@
 				36BA2AF61CB49F8C00AAD564 /* cvc-amex.png in Resources */,
 				36BA2AF71CB49F8C00AAD564 /* cvc-amex@2x.png in Resources */,
 				36BA2AF81CB49F8C00AAD564 /* cvc.png in Resources */,
+				36BA2B0F1CB4A9EA00AAD564 /* Info.plist in Resources */,
 				36BA2AF91CB49F8C00AAD564 /* cvc@2x.png in Resources */,
 				36BA2AFA1CB49F8C00AAD564 /* diners.png in Resources */,
 				36BA2AFB1CB49F8C00AAD564 /* diners@2x.png in Resources */,
@@ -867,6 +870,7 @@
 				36BA2ADD1CB49F6500AAD564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA45AC6616AE350D0003A41D /* Build configuration list for PBXProject "PaymentKit Example" */ = {
 			isa = XCConfigurationList;
