@@ -1,25 +1,25 @@
 //
-//  SLPaymentKit.h
-//  SLPaymentKit
+//  PaymentKit.h
+//  PaymentKit
 //
 //  Created by Chandler De Angelis on 4/5/16.
 //  Copyright © 2016 Stripe. All rights reserved.
 //
 
-//! Project version number for SLPaymentKit.
-FOUNDATION_EXPORT double SLPaymentKitVersionNumber;
-
-//! Project version string for SLPaymentKit.
-FOUNDATION_EXPORT const unsigned char SLPaymentKitVersionString[];
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+//! Project version number for PaymentKit.
+FOUNDATION_EXPORT double PaymentKitVersionNumber;
+
+//! Project version string for PaymentKit.
+FOUNDATION_EXPORT const unsigned char PaymentKitVersionString[];
 
 #import "PTKView.h"
 #import "PTKTextField.h"
 #import "PTKAddressZip.h"
 #import "PTKCardNumber.h"
-#import "PTKCardCVD.h"
+#import "PTKCardCVC.h"
 #import "PTKCardType.h"
 #import "PTKCardExpiry.h"
 #import "PTKCard.h"

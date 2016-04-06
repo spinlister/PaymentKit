@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		368DF0211CB4AB5F0095E16B /* PaymentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0201CB4AB5F0095E16B /* PaymentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368DF0501CB4ABA50095E16B /* PTKAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0261CB4ABA50095E16B /* PTKAddressZip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0511CB4ABA50095E16B /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0271CB4ABA50095E16B /* PTKAddressZip.m */; };
+		368DF0521CB4ABA50095E16B /* PTKCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0281CB4ABA50095E16B /* PTKCard.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0531CB4ABA50095E16B /* PTKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0291CB4ABA50095E16B /* PTKCard.m */; };
+		368DF0541CB4ABA50095E16B /* PTKCardCVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02A1CB4ABA50095E16B /* PTKCardCVC.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0551CB4ABA50095E16B /* PTKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF02B1CB4ABA50095E16B /* PTKCardCVC.m */; };
+		368DF0561CB4ABA50095E16B /* PTKCardExpiry.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02C1CB4ABA50095E16B /* PTKCardExpiry.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0571CB4ABA50095E16B /* PTKCardExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF02D1CB4ABA50095E16B /* PTKCardExpiry.m */; };
+		368DF0581CB4ABA50095E16B /* PTKCardNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF02E1CB4ABA50095E16B /* PTKCardNumber.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0591CB4ABA50095E16B /* PTKCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF02F1CB4ABA50095E16B /* PTKCardNumber.m */; };
+		368DF05A1CB4ABA50095E16B /* PTKCardType.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0301CB4ABA50095E16B /* PTKCardType.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF05B1CB4ABA50095E16B /* PTKComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0311CB4ABA50095E16B /* PTKComponent.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF05C1CB4ABA50095E16B /* PTKComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0321CB4ABA50095E16B /* PTKComponent.m */; };
+		368DF05D1CB4ABA50095E16B /* PTKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0331CB4ABA50095E16B /* PTKTextField.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF05E1CB4ABA50095E16B /* PTKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0341CB4ABA50095E16B /* PTKTextField.m */; };
+		368DF05F1CB4ABA50095E16B /* PTKUSAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0351CB4ABA50095E16B /* PTKUSAddressZip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0601CB4ABA50095E16B /* PTKUSAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0361CB4ABA50095E16B /* PTKUSAddressZip.m */; };
+		368DF0611CB4ABA50095E16B /* PTKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 368DF0371CB4ABA50095E16B /* PTKView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		368DF0621CB4ABA50095E16B /* PTKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DF0381CB4ABA50095E16B /* PTKView.m */; };
+		368DF0631CB4ABA50095E16B /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03B1CB4ABA50095E16B /* amex.png */; };
+		368DF0641CB4ABA50095E16B /* amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03C1CB4ABA50095E16B /* amex@2x.png */; };
+		368DF0651CB4ABA50095E16B /* cvc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03D1CB4ABA50095E16B /* cvc-amex.png */; };
+		368DF0661CB4ABA50095E16B /* cvc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03E1CB4ABA50095E16B /* cvc-amex@2x.png */; };
+		368DF0671CB4ABA50095E16B /* cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF03F1CB4ABA50095E16B /* cvc.png */; };
+		368DF0681CB4ABA50095E16B /* cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0401CB4ABA50095E16B /* cvc@2x.png */; };
+		368DF0691CB4ABA50095E16B /* diners.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0411CB4ABA50095E16B /* diners.png */; };
+		368DF06A1CB4ABA50095E16B /* diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0421CB4ABA50095E16B /* diners@2x.png */; };
+		368DF06B1CB4ABA50095E16B /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0431CB4ABA50095E16B /* discover.png */; };
+		368DF06C1CB4ABA50095E16B /* discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0441CB4ABA50095E16B /* discover@2x.png */; };
+		368DF06D1CB4ABA50095E16B /* jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0451CB4ABA50095E16B /* jcb.png */; };
+		368DF06E1CB4ABA50095E16B /* jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0461CB4ABA50095E16B /* jcb@2x.png */; };
+		368DF06F1CB4ABA50095E16B /* mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0471CB4ABA50095E16B /* mastercard.png */; };
+		368DF0701CB4ABA50095E16B /* mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0481CB4ABA50095E16B /* mastercard@2x.png */; };
+		368DF0711CB4ABA50095E16B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF0491CB4ABA50095E16B /* placeholder.png */; };
+		368DF0721CB4ABA50095E16B /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF04A1CB4ABA50095E16B /* placeholder@2x.png */; };
+		368DF0731CB4ABA50095E16B /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF04B1CB4ABA50095E16B /* visa.png */; };
+		368DF0741CB4ABA50095E16B /* visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF04C1CB4ABA50095E16B /* visa@2x.png */; };
+		368DF0751CB4ABA50095E16B /* gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF04D1CB4ABA50095E16B /* gradient@2x.png */; };
+		368DF0761CB4ABA50095E16B /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF04E1CB4ABA50095E16B /* textfield.png */; };
+		368DF0771CB4ABA50095E16B /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368DF04F1CB4ABA50095E16B /* textfield@2x.png */; };
+		368DF07A1CB4AC920095E16B /* PaymentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368DF01E1CB4AB5F0095E16B /* PaymentKit.framework */; };
+		FA007D1F16FA3B82006DD86E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6F1A5916C19BF700835C75 /* QuartzCore.framework */; };
+		FA45AC7116AE350D0003A41D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7016AE350D0003A41D /* UIKit.framework */; };
+		FA45AC7316AE350D0003A41D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7216AE350D0003A41D /* Foundation.framework */; };
+		FA45AC7516AE350D0003A41D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7416AE350D0003A41D /* CoreGraphics.framework */; };
+		FA45AC7B16AE350D0003A41D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA45AC7916AE350D0003A41D /* InfoPlist.strings */; };
+		FA45AC7D16AE350D0003A41D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45AC7C16AE350D0003A41D /* main.m */; };
+		FA45AC8116AE350D0003A41D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45AC8016AE350D0003A41D /* AppDelegate.m */; };
+		FA45AC8316AE350D0003A41D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA45AC8216AE350D0003A41D /* Default.png */; };
+		FA45AC8516AE350D0003A41D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA45AC8416AE350D0003A41D /* Default@2x.png */; };
+		FA45AC8716AE350E0003A41D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA45AC8616AE350E0003A41D /* Default-568h@2x.png */; };
+		FA45AC8A16AE350E0003A41D /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45AC8916AE350E0003A41D /* PaymentViewController.m */; };
+		FA45AC8D16AE350E0003A41D /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA45AC8B16AE350E0003A41D /* PaymentViewController.xib */; };
+		FA6A2F8D16C2D6F400915AEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7016AE350D0003A41D /* UIKit.framework */; };
+		FA6A2F8E16C2D6F400915AEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA45AC7216AE350D0003A41D /* Foundation.framework */; };
+		FA6A2F9416C2D6F400915AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A2F9216C2D6F400915AEB /* InfoPlist.strings */; };
+		FA6A2F9E16C2D89600915AEB /* PTKCardNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A2F9D16C2D89600915AEB /* PTKCardNumberTest.m */; };
+		FA6A2FA216C2E00E00915AEB /* PTKCardCVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A2FA116C2E00E00915AEB /* PTKCardCVCTest.m */; };
+		FA6A2FA616C2E1F400915AEB /* PTKCardExpiryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A2FA516C2E1F400915AEB /* PTKCardExpiryTest.m */; };
+		FA6F1A5E16C1B21000835C75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F1A5C16C1B21000835C75 /* ViewController.m */; };
+		FA6F1A5F16C1B21000835C75 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6F1A5D16C1B21000835C75 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368DF0781CB4AC8A0095E16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA45AC6316AE350D0003A41D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368DF01D1CB4AB5F0095E16B;
+			remoteInfo = PaymentKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		368DF01E1CB4AB5F0095E16B /* PaymentKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368DF0201CB4AB5F0095E16B /* PaymentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentKit.h; sourceTree = "<group>"; };
+		368DF0221CB4AB5F0095E16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368DF0261CB4ABA50095E16B /* PTKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKAddressZip.h; sourceTree = "<group>"; };
+		368DF0271CB4ABA50095E16B /* PTKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKAddressZip.m; sourceTree = "<group>"; };
+		368DF0281CB4ABA50095E16B /* PTKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCard.h; sourceTree = "<group>"; };
+		368DF0291CB4ABA50095E16B /* PTKCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKCard.m; sourceTree = "<group>"; };
+		368DF02A1CB4ABA50095E16B /* PTKCardCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCardCVC.h; sourceTree = "<group>"; };
+		368DF02B1CB4ABA50095E16B /* PTKCardCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKCardCVC.m; sourceTree = "<group>"; };
+		368DF02C1CB4ABA50095E16B /* PTKCardExpiry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCardExpiry.h; sourceTree = "<group>"; };
+		368DF02D1CB4ABA50095E16B /* PTKCardExpiry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKCardExpiry.m; sourceTree = "<group>"; };
+		368DF02E1CB4ABA50095E16B /* PTKCardNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCardNumber.h; sourceTree = "<group>"; };
+		368DF02F1CB4ABA50095E16B /* PTKCardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKCardNumber.m; sourceTree = "<group>"; };
+		368DF0301CB4ABA50095E16B /* PTKCardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCardType.h; sourceTree = "<group>"; };
+		368DF0311CB4ABA50095E16B /* PTKComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKComponent.h; sourceTree = "<group>"; };
+		368DF0321CB4ABA50095E16B /* PTKComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKComponent.m; sourceTree = "<group>"; };
+		368DF0331CB4ABA50095E16B /* PTKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKTextField.h; sourceTree = "<group>"; };
+		368DF0341CB4ABA50095E16B /* PTKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKTextField.m; sourceTree = "<group>"; };
+		368DF0351CB4ABA50095E16B /* PTKUSAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKUSAddressZip.h; sourceTree = "<group>"; };
+		368DF0361CB4ABA50095E16B /* PTKUSAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKUSAddressZip.m; sourceTree = "<group>"; };
+		368DF0371CB4ABA50095E16B /* PTKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKView.h; sourceTree = "<group>"; };
+		368DF0381CB4ABA50095E16B /* PTKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKView.m; sourceTree = "<group>"; };
+		368DF03B1CB4ABA50095E16B /* amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amex.png; sourceTree = "<group>"; };
+		368DF03C1CB4ABA50095E16B /* amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amex@2x.png"; sourceTree = "<group>"; };
+		368DF03D1CB4ABA50095E16B /* cvc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc-amex.png"; sourceTree = "<group>"; };
+		368DF03E1CB4ABA50095E16B /* cvc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc-amex@2x.png"; sourceTree = "<group>"; };
+		368DF03F1CB4ABA50095E16B /* cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cvc.png; sourceTree = "<group>"; };
+		368DF0401CB4ABA50095E16B /* cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc@2x.png"; sourceTree = "<group>"; };
+		368DF0411CB4ABA50095E16B /* diners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diners.png; sourceTree = "<group>"; };
+		368DF0421CB4ABA50095E16B /* diners@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diners@2x.png"; sourceTree = "<group>"; };
+		368DF0431CB4ABA50095E16B /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover.png; sourceTree = "<group>"; };
+		368DF0441CB4ABA50095E16B /* discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover@2x.png"; sourceTree = "<group>"; };
+		368DF0451CB4ABA50095E16B /* jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jcb.png; sourceTree = "<group>"; };
+		368DF0461CB4ABA50095E16B /* jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jcb@2x.png"; sourceTree = "<group>"; };
+		368DF0471CB4ABA50095E16B /* mastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastercard.png; sourceTree = "<group>"; };
+		368DF0481CB4ABA50095E16B /* mastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastercard@2x.png"; sourceTree = "<group>"; };
+		368DF0491CB4ABA50095E16B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		368DF04A1CB4ABA50095E16B /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
+		368DF04B1CB4ABA50095E16B /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visa.png; sourceTree = "<group>"; };
+		368DF04C1CB4ABA50095E16B /* visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visa@2x.png"; sourceTree = "<group>"; };
+		368DF04D1CB4ABA50095E16B /* gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient@2x.png"; sourceTree = "<group>"; };
+		368DF04E1CB4ABA50095E16B /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
+		368DF04F1CB4ABA50095E16B /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
+		4A8CD3EB18DD327700796758 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA45AC6C16AE350D0003A41D /* PaymentKit Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaymentKit Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA45AC7016AE350D0003A41D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA45AC7216AE350D0003A41D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA45AC7416AE350D0003A41D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA45AC7816AE350D0003A41D /* PaymentKit Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaymentKit Example-Info.plist"; sourceTree = "<group>"; };
+		FA45AC7A16AE350D0003A41D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		FA45AC7C16AE350D0003A41D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA45AC7E16AE350D0003A41D /* PaymentKit Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "PaymentKit Example-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA45AC7F16AE350D0003A41D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA45AC8016AE350D0003A41D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA45AC8216AE350D0003A41D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FA45AC8416AE350D0003A41D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FA45AC8616AE350E0003A41D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA45AC8816AE350E0003A41D /* PaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PaymentViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA45AC8916AE350E0003A41D /* PaymentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PaymentViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA45AC8C16AE350E0003A41D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PaymentViewController.xib; sourceTree = "<group>"; };
+		FA6A2F8A16C2D6F400915AEB /* PaymentKit Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PaymentKit Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6A2F9116C2D6F400915AEB /* PaymentKit Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaymentKit Test-Info.plist"; sourceTree = "<group>"; };
+		FA6A2F9316C2D6F400915AEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		FA6A2F9816C2D6F400915AEB /* PaymentKit Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "PaymentKit Test-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6A2F9C16C2D89600915AEB /* PTKCardNumberTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PTKCardNumberTest.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA6A2F9D16C2D89600915AEB /* PTKCardNumberTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PTKCardNumberTest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6A2FA016C2E00E00915AEB /* PTKCardCVCTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PTKCardCVCTest.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA6A2FA116C2E00E00915AEB /* PTKCardCVCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PTKCardCVCTest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6A2FA416C2E1F400915AEB /* PTKCardExpiryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PTKCardExpiryTest.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA6A2FA516C2E1F400915AEB /* PTKCardExpiryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PTKCardExpiryTest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6F1A5916C19BF700835C75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA6F1A5B16C1B21000835C75 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA6F1A5C16C1B21000835C75 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA6F1A5D16C1B21000835C75 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		368DF01A1CB4AB5F0095E16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA45AC6916AE350D0003A41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368DF07A1CB4AC920095E16B /* PaymentKit.framework in Frameworks */,
+				FA007D1F16FA3B82006DD86E /* QuartzCore.framework in Frameworks */,
+				FA45AC7116AE350D0003A41D /* UIKit.framework in Frameworks */,
+				FA45AC7316AE350D0003A41D /* Foundation.framework in Frameworks */,
+				FA45AC7516AE350D0003A41D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6A2F8616C2D6F400915AEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A2F8D16C2D6F400915AEB /* UIKit.framework in Frameworks */,
+				FA6A2F8E16C2D6F400915AEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368DF01F1CB4AB5F0095E16B /* PaymentKit */ = {
+			isa = PBXGroup;
+			children = (
+				368DF0201CB4AB5F0095E16B /* PaymentKit.h */,
+				368DF0221CB4AB5F0095E16B /* Info.plist */,
+				368DF0261CB4ABA50095E16B /* PTKAddressZip.h */,
+				368DF0271CB4ABA50095E16B /* PTKAddressZip.m */,
+				368DF0281CB4ABA50095E16B /* PTKCard.h */,
+				368DF0291CB4ABA50095E16B /* PTKCard.m */,
+				368DF02A1CB4ABA50095E16B /* PTKCardCVC.h */,
+				368DF02B1CB4ABA50095E16B /* PTKCardCVC.m */,
+				368DF02C1CB4ABA50095E16B /* PTKCardExpiry.h */,
+				368DF02D1CB4ABA50095E16B /* PTKCardExpiry.m */,
+				368DF02E1CB4ABA50095E16B /* PTKCardNumber.h */,
+				368DF02F1CB4ABA50095E16B /* PTKCardNumber.m */,
+				368DF0301CB4ABA50095E16B /* PTKCardType.h */,
+				368DF0311CB4ABA50095E16B /* PTKComponent.h */,
+				368DF0321CB4ABA50095E16B /* PTKComponent.m */,
+				368DF0331CB4ABA50095E16B /* PTKTextField.h */,
+				368DF0341CB4ABA50095E16B /* PTKTextField.m */,
+				368DF0351CB4ABA50095E16B /* PTKUSAddressZip.h */,
+				368DF0361CB4ABA50095E16B /* PTKUSAddressZip.m */,
+				368DF0371CB4ABA50095E16B /* PTKView.h */,
+				368DF0381CB4ABA50095E16B /* PTKView.m */,
+				368DF0391CB4ABA50095E16B /* Resources */,
+			);
+			path = PaymentKit;
+			sourceTree = "<group>";
+		};
+		368DF0391CB4ABA50095E16B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				368DF03A1CB4ABA50095E16B /* Cards */,
+				368DF04D1CB4ABA50095E16B /* gradient@2x.png */,
+				368DF04E1CB4ABA50095E16B /* textfield.png */,
+				368DF04F1CB4ABA50095E16B /* textfield@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		368DF03A1CB4ABA50095E16B /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				368DF03B1CB4ABA50095E16B /* amex.png */,
+				368DF03C1CB4ABA50095E16B /* amex@2x.png */,
+				368DF03D1CB4ABA50095E16B /* cvc-amex.png */,
+				368DF03E1CB4ABA50095E16B /* cvc-amex@2x.png */,
+				368DF03F1CB4ABA50095E16B /* cvc.png */,
+				368DF0401CB4ABA50095E16B /* cvc@2x.png */,
+				368DF0411CB4ABA50095E16B /* diners.png */,
+				368DF0421CB4ABA50095E16B /* diners@2x.png */,
+				368DF0431CB4ABA50095E16B /* discover.png */,
+				368DF0441CB4ABA50095E16B /* discover@2x.png */,
+				368DF0451CB4ABA50095E16B /* jcb.png */,
+				368DF0461CB4ABA50095E16B /* jcb@2x.png */,
+				368DF0471CB4ABA50095E16B /* mastercard.png */,
+				368DF0481CB4ABA50095E16B /* mastercard@2x.png */,
+				368DF0491CB4ABA50095E16B /* placeholder.png */,
+				368DF04A1CB4ABA50095E16B /* placeholder@2x.png */,
+				368DF04B1CB4ABA50095E16B /* visa.png */,
+				368DF04C1CB4ABA50095E16B /* visa@2x.png */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		FA45AC6116AE350D0003A41D = {
+			isa = PBXGroup;
+			children = (
+				FA45AC7616AE350D0003A41D /* PaymentKit Example */,
+				FA6A2F8F16C2D6F400915AEB /* PaymentKit Test */,
+				368DF01F1CB4AB5F0095E16B /* PaymentKit */,
+				FA45AC6F16AE350D0003A41D /* Frameworks */,
+				FA45AC6D16AE350D0003A41D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA45AC6D16AE350D0003A41D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA45AC6C16AE350D0003A41D /* PaymentKit Example.app */,
+				FA6A2F8A16C2D6F400915AEB /* PaymentKit Test.xctest */,
+				368DF01E1CB4AB5F0095E16B /* PaymentKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA45AC6F16AE350D0003A41D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CD3EB18DD327700796758 /* XCTest.framework */,
+				FA6F1A5916C19BF700835C75 /* QuartzCore.framework */,
+				FA45AC7016AE350D0003A41D /* UIKit.framework */,
+				FA45AC7216AE350D0003A41D /* Foundation.framework */,
+				FA45AC7416AE350D0003A41D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA45AC7616AE350D0003A41D /* PaymentKit Example */ = {
+			isa = PBXGroup;
+			children = (
+				FA45AC7F16AE350D0003A41D /* AppDelegate.h */,
+				FA45AC8016AE350D0003A41D /* AppDelegate.m */,
+				FA45AC8816AE350E0003A41D /* PaymentViewController.h */,
+				FA45AC8916AE350E0003A41D /* PaymentViewController.m */,
+				FA45AC8B16AE350E0003A41D /* PaymentViewController.xib */,
+				FA45AC7716AE350D0003A41D /* Supporting Files */,
+				FA6F1A5B16C1B21000835C75 /* ViewController.h */,
+				FA6F1A5C16C1B21000835C75 /* ViewController.m */,
+				FA6F1A5D16C1B21000835C75 /* ViewController.xib */,
+			);
+			path = "PaymentKit Example";
+			sourceTree = "<group>";
+		};
+		FA45AC7716AE350D0003A41D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA45AC7816AE350D0003A41D /* PaymentKit Example-Info.plist */,
+				FA45AC7916AE350D0003A41D /* InfoPlist.strings */,
+				FA45AC7C16AE350D0003A41D /* main.m */,
+				FA45AC7E16AE350D0003A41D /* PaymentKit Example-Prefix.pch */,
+				FA45AC8216AE350D0003A41D /* Default.png */,
+				FA45AC8416AE350D0003A41D /* Default@2x.png */,
+				FA45AC8616AE350E0003A41D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA6A2F8F16C2D6F400915AEB /* PaymentKit Test */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A2F9016C2D6F400915AEB /* Supporting Files */,
+				FA6A2F9C16C2D89600915AEB /* PTKCardNumberTest.h */,
+				FA6A2F9D16C2D89600915AEB /* PTKCardNumberTest.m */,
+				FA6A2FA016C2E00E00915AEB /* PTKCardCVCTest.h */,
+				FA6A2FA116C2E00E00915AEB /* PTKCardCVCTest.m */,
+				FA6A2FA416C2E1F400915AEB /* PTKCardExpiryTest.h */,
+				FA6A2FA516C2E1F400915AEB /* PTKCardExpiryTest.m */,
+			);
+			path = "PaymentKit Test";
+			sourceTree = "<group>";
+		};
+		FA6A2F9016C2D6F400915AEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A2F9116C2D6F400915AEB /* PaymentKit Test-Info.plist */,
+				FA6A2F9216C2D6F400915AEB /* InfoPlist.strings */,
+				FA6A2F9816C2D6F400915AEB /* PaymentKit Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		368DF01B1CB4AB5F0095E16B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368DF0211CB4AB5F0095E16B /* PaymentKit.h in Headers */,
+				368DF05F1CB4ABA50095E16B /* PTKUSAddressZip.h in Headers */,
+				368DF0521CB4ABA50095E16B /* PTKCard.h in Headers */,
+				368DF05A1CB4ABA50095E16B /* PTKCardType.h in Headers */,
+				368DF0501CB4ABA50095E16B /* PTKAddressZip.h in Headers */,
+				368DF0581CB4ABA50095E16B /* PTKCardNumber.h in Headers */,
+				368DF0611CB4ABA50095E16B /* PTKView.h in Headers */,
+				368DF0561CB4ABA50095E16B /* PTKCardExpiry.h in Headers */,
+				368DF05D1CB4ABA50095E16B /* PTKTextField.h in Headers */,
+				368DF05B1CB4ABA50095E16B /* PTKComponent.h in Headers */,
+				368DF0541CB4ABA50095E16B /* PTKCardCVC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		368DF01D1CB4AB5F0095E16B /* PaymentKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368DF0231CB4AB5F0095E16B /* Build configuration list for PBXNativeTarget "PaymentKit" */;
+			buildPhases = (
+				368DF0191CB4AB5F0095E16B /* Sources */,
+				368DF01A1CB4AB5F0095E16B /* Frameworks */,
+				368DF01B1CB4AB5F0095E16B /* Headers */,
+				368DF01C1CB4AB5F0095E16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentKit;
+			productName = PaymentKit;
+			productReference = 368DF01E1CB4AB5F0095E16B /* PaymentKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA45AC6B16AE350D0003A41D /* PaymentKit Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA45AC9316AE350E0003A41D /* Build configuration list for PBXNativeTarget "PaymentKit Example" */;
+			buildPhases = (
+				FA45AC6816AE350D0003A41D /* Sources */,
+				FA45AC6916AE350D0003A41D /* Frameworks */,
+				FA45AC6A16AE350D0003A41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368DF0791CB4AC8A0095E16B /* PBXTargetDependency */,
+			);
+			name = "PaymentKit Example";
+			productName = "PaymentKit Example";
+			productReference = FA45AC6C16AE350D0003A41D /* PaymentKit Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA6A2F8916C2D6F400915AEB /* PaymentKit Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6A2F9B16C2D6F400915AEB /* Build configuration list for PBXNativeTarget "PaymentKit Test" */;
+			buildPhases = (
+				FA6A2F8516C2D6F400915AEB /* Sources */,
+				FA6A2F8616C2D6F400915AEB /* Frameworks */,
+				FA6A2F8716C2D6F400915AEB /* Resources */,
+				FA6A2F8816C2D6F400915AEB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaymentKit Test";
+			productName = "PaymentKit Test";
+			productReference = FA6A2F8A16C2D6F400915AEB /* PaymentKit Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA45AC6316AE350D0003A41D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Stripe;
+				TargetAttributes = {
+					368DF01D1CB4AB5F0095E16B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FA45AC6616AE350D0003A41D /* Build configuration list for PBXProject "PaymentKit Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA45AC6116AE350D0003A41D;
+			productRefGroup = FA45AC6D16AE350D0003A41D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA45AC6B16AE350D0003A41D /* PaymentKit Example */,
+				FA6A2F8916C2D6F400915AEB /* PaymentKit Test */,
+				368DF01D1CB4AB5F0095E16B /* PaymentKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		368DF01C1CB4AB5F0095E16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368DF0691CB4ABA50095E16B /* diners.png in Resources */,
+				368DF06C1CB4ABA50095E16B /* discover@2x.png in Resources */,
+				368DF0721CB4ABA50095E16B /* placeholder@2x.png in Resources */,
+				368DF0671CB4ABA50095E16B /* cvc.png in Resources */,
+				368DF0661CB4ABA50095E16B /* cvc-amex@2x.png in Resources */,
+				368DF0771CB4ABA50095E16B /* textfield@2x.png in Resources */,
+				368DF0761CB4ABA50095E16B /* textfield.png in Resources */,
+				368DF0741CB4ABA50095E16B /* visa@2x.png in Resources */,
+				368DF06B1CB4ABA50095E16B /* discover.png in Resources */,
+				368DF0631CB4ABA50095E16B /* amex.png in Resources */,
+				368DF06F1CB4ABA50095E16B /* mastercard.png in Resources */,
+				368DF0681CB4ABA50095E16B /* cvc@2x.png in Resources */,
+				368DF06D1CB4ABA50095E16B /* jcb.png in Resources */,
+				368DF0651CB4ABA50095E16B /* cvc-amex.png in Resources */,
+				368DF0641CB4ABA50095E16B /* amex@2x.png in Resources */,
+				368DF06E1CB4ABA50095E16B /* jcb@2x.png in Resources */,
+				368DF0731CB4ABA50095E16B /* visa.png in Resources */,
+				368DF0751CB4ABA50095E16B /* gradient@2x.png in Resources */,
+				368DF0701CB4ABA50095E16B /* mastercard@2x.png in Resources */,
+				368DF0711CB4ABA50095E16B /* placeholder.png in Resources */,
+				368DF06A1CB4ABA50095E16B /* diners@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA45AC6A16AE350D0003A41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA45AC7B16AE350D0003A41D /* InfoPlist.strings in Resources */,
+				FA45AC8316AE350D0003A41D /* Default.png in Resources */,
+				FA45AC8516AE350D0003A41D /* Default@2x.png in Resources */,
+				FA45AC8716AE350E0003A41D /* Default-568h@2x.png in Resources */,
+				FA45AC8D16AE350E0003A41D /* PaymentViewController.xib in Resources */,
+				FA6F1A5F16C1B21000835C75 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6A2F8716C2D6F400915AEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A2F9416C2D6F400915AEB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA6A2F8816C2D6F400915AEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		368DF0191CB4AB5F0095E16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368DF0571CB4ABA50095E16B /* PTKCardExpiry.m in Sources */,
+				368DF0621CB4ABA50095E16B /* PTKView.m in Sources */,
+				368DF0511CB4ABA50095E16B /* PTKAddressZip.m in Sources */,
+				368DF05E1CB4ABA50095E16B /* PTKTextField.m in Sources */,
+				368DF0551CB4ABA50095E16B /* PTKCardCVC.m in Sources */,
+				368DF0601CB4ABA50095E16B /* PTKUSAddressZip.m in Sources */,
+				368DF0591CB4ABA50095E16B /* PTKCardNumber.m in Sources */,
+				368DF0531CB4ABA50095E16B /* PTKCard.m in Sources */,
+				368DF05C1CB4ABA50095E16B /* PTKComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA45AC6816AE350D0003A41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA45AC7D16AE350D0003A41D /* main.m in Sources */,
+				FA45AC8116AE350D0003A41D /* AppDelegate.m in Sources */,
+				FA45AC8A16AE350E0003A41D /* PaymentViewController.m in Sources */,
+				FA6F1A5E16C1B21000835C75 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6A2F8516C2D6F400915AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A2F9E16C2D89600915AEB /* PTKCardNumberTest.m in Sources */,
+				FA6A2FA216C2E00E00915AEB /* PTKCardCVCTest.m in Sources */,
+				FA6A2FA616C2E1F400915AEB /* PTKCardExpiryTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368DF0791CB4AC8A0095E16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368DF01D1CB4AB5F0095E16B /* PaymentKit */;
+			targetProxy = 368DF0781CB4AC8A0095E16B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA45AC7916AE350D0003A41D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA45AC7A16AE350D0003A41D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA45AC8B16AE350E0003A41D /* PaymentViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA45AC8C16AE350E0003A41D /* en */,
+			);
+			name = PaymentViewController.xib;
+			sourceTree = "<group>";
+		};
+		FA6A2F9216C2D6F400915AEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6A2F9316C2D6F400915AEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		368DF0241CB4AB5F0095E16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PaymentKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spinlister.PaymentKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		368DF0251CB4AB5F0095E16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PaymentKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spinlister.PaymentKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA45AC9116AE350E0003A41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA45AC9216AE350E0003A41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA45AC9416AE350E0003A41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "PaymentKit Example/PaymentKit Example-Prefix.pch";
+				INFOPLIST_FILE = "PaymentKit Example/PaymentKit Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "PaymentKit Example";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA45AC9516AE350E0003A41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "PaymentKit Example/PaymentKit Example-Prefix.pch";
+				INFOPLIST_FILE = "PaymentKit Example/PaymentKit Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "PaymentKit Example";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA6A2F9916C2D6F400915AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaymentKit Test/PaymentKit Test-Prefix.pch";
+				INFOPLIST_FILE = "PaymentKit Test/PaymentKit Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA6A2F9A16C2D6F400915AEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaymentKit Test/PaymentKit Test-Prefix.pch";
+				INFOPLIST_FILE = "PaymentKit Test/PaymentKit Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368DF0231CB4AB5F0095E16B /* Build configuration list for PBXNativeTarget "PaymentKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368DF0241CB4AB5F0095E16B /* Debug */,
+				368DF0251CB4AB5F0095E16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA45AC6616AE350D0003A41D /* Build configuration list for PBXProject "PaymentKit Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA45AC9116AE350E0003A41D /* Debug */,
+				FA45AC9216AE350E0003A41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA45AC9316AE350E0003A41D /* Build configuration list for PBXNativeTarget "PaymentKit Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA45AC9416AE350E0003A41D /* Debug */,
+				FA45AC9516AE350E0003A41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6A2F9B16C2D6F400915AEB /* Build configuration list for PBXNativeTarget "PaymentKit Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6A2F9916C2D6F400915AEB /* Debug */,
+				FA6A2F9A16C2D6F400915AEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA45AC6316AE350D0003A41D /* Project object */;
+}
